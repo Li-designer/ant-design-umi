@@ -1,8 +1,21 @@
 {
-  "printWidth": 80,
+  "printWidth": 100,
   "singleQuote": true,
+  "semi": false,
   "trailingComma": "all",
   "proseWrap": "never",
-  "overrides": [{ "files": ".prettierrc", "options": { "parser": "json" } }],
-  "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-packagejson"]
+  "jsxSingleQuote": false,
+  "arrowParens": "always",
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ],
+  "plugins": [
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-packagejson"
+  ]
 }

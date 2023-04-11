@@ -1,7 +1,7 @@
-import { Config, configUmiAlias, createConfig } from '@umijs/max/test';
+import { Config, configUmiAlias, createConfig } from '@umijs/max/test'
 
 export default async () => {
-  try{
+  try {
     return (await configUmiAlias({
       ...createConfig({
         target: 'browser',
@@ -15,13 +15,13 @@ export default async () => {
         'src/**/*.{ts,js,tsx,jsx}',
         '!src/.umi/**',
         '!src/.umi-test/**',
-        '!src/.umi-production/**'
+        '!src/.umi-production/**',
       ],
       // if you require some es-module npm package, please uncomment below line and insert your package name
       // transformIgnorePatterns: ['node_modules/(?!.*(lodash-es|your-es-pkg-name)/)']
-    })) as Config.InitialOptions;
+    })) as Config.InitialOptions
   } catch (e) {
-    console.log(e);
-    throw e;
+    console.log(e)
+    throw e
   }
-};
+}
