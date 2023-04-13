@@ -20,7 +20,7 @@ module.exports = {
     'no-duplicate-case': 2,
     'newline-before-return': 0,
     'indent': ['error', 2],
-    'arrow-spacing': [2, { before: true, after: true }],
+    'arrow-spacing': [2, { "before": true, "after": true }],
     'no-await-in-loop': 2,
     'no-constant-condition': 2,
     'no-dupe-args': 2,
