@@ -4,7 +4,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [require.resolve('@umijs/max/eslint'), "eslint:recommended"],
+  extends: [require.resolve('@umijs/max/eslint'), "eslint:recommended", "eslint:react/recommended"],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',

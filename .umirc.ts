@@ -1,3 +1,4 @@
+import RightContent from '@/Layout/headerContent'
 import { defineConfig } from '@umijs/max'
 
 export default defineConfig({
@@ -8,7 +9,12 @@ export default defineConfig({
   request: {},
   layout: {
     title: '@umijs/max',
+    // loading:true,
   },
+  hash: true,
+  history: { type: 'hash' },
+  /* 自带icon 参考:https://icones.js.org/ */
+  icons: { autoInstall: {} },
   routes: [
     {
       path: '/',

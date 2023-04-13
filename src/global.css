@@ -1,3 +1,7 @@
 .umi-plugin-layout-right {
-  margin-left: 0 !important;
+  margin-left: 20px !important;
+  margin-right: 100px;
+}
+.ant-dropdown-trigger {
+  float: right;
 }
