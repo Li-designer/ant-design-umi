@@ -54,6 +54,10 @@ declare namespace API {
     /** email */
     email?: string
     gender?: UserGenderEnum
+    /* 角色 */
+    role?: string
+    /* 角色的路由 */
+    hasRoutes?: Array<string>
   }
 
   interface UserInfoVO {

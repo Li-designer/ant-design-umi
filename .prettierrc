@@ -1,5 +1,5 @@
 {
-  "printWidth": 100,
+  "printWidth": 80,
   "singleQuote": true,
   "semi": false,
   "trailingComma": "all",
@@ -8,14 +8,14 @@
   "arrowParens": "always",
   "overrides": [
     {
-      "files": ".prettierrc",
+      "files": [
+        ".prettierrc",
+        "*.ts",
+        "*.tsx"
+      ],
       "options": {
-        "parser": "json"
+        "parser": "react"
       }
     }
-  ],
-  "plugins": [
-    "prettier-plugin-organize-imports",
-    "prettier-plugin-packagejson"
   ]
 }

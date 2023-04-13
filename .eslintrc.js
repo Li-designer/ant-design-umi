@@ -1,22 +1,35 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
     es2021: true,
   },
-  extends:require.resolve('@umijs/max/eslint'),
+  extends: [require.resolve('@umijs/max/eslint'), "eslint:recommended"],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', 'prettier'],
+  plugins: ['react', 'react-hooks', 'prettier'],
   rules: {
     'no-label-var': 2,
     'no-dupe-keys': 2,
     'no-unused-vars': 0,
+    'no-trailing-spaces': 1,
     'no-empty': 2,
     'no-duplicate-case': 2,
     'newline-before-return': 0,
+    'indent': ['error', 2],
+    'arrow-spacing': [2, { before: true, after: true }],
+    'no-await-in-loop': 2,
+    'no-constant-condition': 2,
+    'no-dupe-args': 2,
+    'no-unreachable': 2,
+    'dot-location': 2,
+    'no-extra-label': 2,
+    'block-spacing': [2, 'always'],
+    'comma-spacing': [2, { "before": false, "after": true }],
+    "space-before-function-paren": [2, "always"],
     'new-cap': [
       2,
       {
@@ -24,7 +37,7 @@ module.exports = {
         capIsNew: false,
       },
     ],
-    quotes: [2, 'single', 'avoid-escape'],
+    'quotes': [2, 'single', 'avoid-escape'],
     'semi-spacing': 2,
     'space-before-function-paren': [2, 'always'],
     'space-in-parens': [2, 'never'],
@@ -52,6 +65,7 @@ module.exports = {
       },
     ],
     'react/jsx-no-duplicate-props': 2,
+    'no-undef': "never",
     'react/jsx-no-undef': 2,
     'react/jsx-filename-extension': [
       2,
@@ -59,5 +73,6 @@ module.exports = {
         extensions: ['.ts', '.tsx'],
       },
     ],
+
   },
 }

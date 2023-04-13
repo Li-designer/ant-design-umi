@@ -15,7 +15,7 @@ interface Props {
   twoToneColor?: string
 }
 
-const MyIcon: React.FC<Props> = (props) => {
+const MyIcon: React.FC<React.PropsWithChildren<Props>> = (props) => {
   const { isSvg = false, iconSvgName, iconName, rotate, spin, style } = props
   return isSvg ? (
     <Icon component={iconSvgName} rotate={rotate} spin={spin} style={style} />
